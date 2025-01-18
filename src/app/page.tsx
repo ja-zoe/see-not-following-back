@@ -1,7 +1,7 @@
 "use client"
 import { ChangeEvent, useState } from "react";
 
-export const Home = () => {
+function Home() {
   const [notFollowingBack, setNotFollowingBack] = useState<string[]>([]);
 
   async function readFileContent(file: File): Promise<string> {
@@ -14,8 +14,8 @@ export const Home = () => {
   }
 
   async function parseFiles(files: FileList) {
-    let followers: any[] = []
-    let following: any[] = []
+    let followers = []
+    let following = []
 
     console.log("Starting to parse files...");
     for (let i = 0; i < files.length; i++) {
