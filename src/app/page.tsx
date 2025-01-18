@@ -91,7 +91,7 @@ function Home() {
       <div className="flex gap-2 flex-wrap justify-center max-h-[600px] overflow-y-auto p-2">
         {notFollowingBack.map((person, index) => {
           return (
-            <div key={index} className="px-3 py-1 border-2 border-white rounded-md hover:opacity-50 hover:cursor-pointer">
+            <div key={index} className="px-3 py-1 border-2 transition-opacity border-white rounded-md hover:opacity-50 hover:cursor-pointer">
               <p><a href={`https://www.instagram.com/${person}/`} target="_blank">{person}</a></p>
             </div>
           );
